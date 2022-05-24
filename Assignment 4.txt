@@ -1,0 +1,57 @@
+1.
+When the table has only a few rows of data, MySQL performs sequential searches actually faster than using indexes. Also, sequential searches will be faster when you want to return most or all of the rows in the table.
+2.
+Primary key cannot be NULL, but unique constraint can.
+3.
+The CHECK constraint is used to constrain the range of values ​​that can be placed into this column.
+4.
+Temp table results can be used by multiple users. Table variables can only be used by the current user.
+5.
+WHERE is applied to individule rows; HAVING is applied to a whole groups.
+6.
+DenseRank() return the rank for ties and have no gap; Rank() can have gap.
+7.
+COUNT(colName) cannot contain NULL, COUNT() can.
+8.
+INNER JOIN return all values matched in both two tables; LEFT JOIN return all matched values in left table and values matched in right table, and using NULL to represent the unmatched values.
+Join is better.
+9.
+Correlated subqueries are executed once per subquery for each row of the outer query.
+The correlated subquery is evaluated once for each row of the parent statement processed.
+10.
+CTE specifies a temporary named result set, which improves the readability and manageability of complex SQL statements. It can implement recursive CTE.
+11.
+Used to create and manage traces, analyze and playback traces.
+12.
+This is code injection that will destroy the database. Avoid using stored procedures.
+13.
+SPs can modify database objects. Inline user-defined functions can be viewed as views with parameters and can be used in rowset operations and JOINs. Unable to JOIN output of stored procedure.
+14.
+Union All extracts all rows from both queries, also including duplicate values. Union only fetches the rows specified in the query.
+15.
+Modify SELECT, like SELECT *
+Don't use sunquery, instead of JOIN
+Delect unnecessary JOIN
+16.
+Lost update; Dirty read; Non repeatable read; Phantom read
+17.
+A situation where two or more transactions wait for another transaction to relinquish a lock.
+18.
+To ensure proper enforcement of database integrity constraints, use normalization to organize database columns and tables.
+19.
+System databases are defined by Microsoft and are needed for SQL Server to operate. These databases include Master, Model, MSDB, TempDB, Resource, Distribution database used in replication as well as the ReportServer and ReportServerTempDB databases used for Reporting Services.
+20.
+A composite key, in the context of relational databases, is a combination of two or more columns in a table that can be used to uniquely identify each row in the table. Uniqueness is only guaranteed when the columns are combined; when taken individually the columns do not guarantee uniqueness. 
+21.
+A candidate key is a specific type of field in a relational database that can identify each unique record independently of any other data. Experts describe a candidate key of having "no redundant attributes" and being a "minimal representation of a tuple" in a relational database table.
+22.
+DDL-Data Definition Language which allow you to create objects in database. (CREATE, ALTER, DROP)
+DML-Data Manipulation Language which allow you to query and modify data. (SELECT, INSERT, DELETE, UPDATE)
+23.
+In the context of transaction processing, the acronym ACID refers to the four key properties of a transaction: atomicity, consistency, isolation, and durability. All changes to data are performed as if they are a single operation. That is, all the changes are performed, or none of them are.
+24.
+A table scan reads each row of a table one by one.
+An index scan traverses all index items, and retrieves table rows through index when the index item satisfies the search criteria.
+25.
+JOINs combine data into new columns. If two tables are joined together, then the data from the first table is shown in one set of column alongside the second table’s column in the same row.
+Unions combine data into new rows. If two tables are “unioned” together, then the data from the first table is in one set of rows, and the data from the second table in another set. The rows are in the same result.
