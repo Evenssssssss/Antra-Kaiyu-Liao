@@ -1,0 +1,22 @@
+1. When to use String vs. StringBuilder in C# ?
+     Strings are immutable and can only be defined once, but StringBuilder allows for mutable strings, so if a string changes, then StringBuilder is recommended.
+
+
+2. What is the base class for all arrays in C#?
+     Array class
+
+
+3. How do you sort an array in C#?
+     Array.Sort(<array>)
+
+
+4. What property of an array object can be used to get the total number of elements in an array?
+     If our array is called arr, then arr.Length
+
+
+5. Can you store multiple data types in System.Array? 
+    No, each array can have one data type.
+    
+    
+6. What’s the difference between the System.Array.CopyTo() and System.Array.Clone()?
+     CopyTo() copies the elements of one array into another. Clone() returns a new (object) array identical to the previous one.
