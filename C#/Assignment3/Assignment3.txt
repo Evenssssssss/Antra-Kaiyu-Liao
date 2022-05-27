@@ -1,0 +1,83 @@
+1. What are the six combinations of access modifier keywords and what do they do? 
+    public               - Accessible from anywhere
+    protected            - Accessible only from within the class or derived classes
+    internal             - Accessible only from same assembly
+    private              - Accessible only from within the class
+    private protected    - Accessible only from within the class or any derived classes within the same assembly
+    protected private    - Accessible only from same assembly or derived classes from different assemblies
+  
+2.What is the difference between the static, const, and readonly keywords when applied to a type member?
+   const refers to a variable that can only be initialized during complie time and then becomes immutable (cannot change its value)
+    readonly refers to a variable that can only be initialized either during compile time or runtime, but then cannot have its values changed.
+    static refers to a variable, method or class belongs to the type itself rather than a specific object
+
+3. What does a constructor do?
+   A constructor initializes an instance of a class and the properties of that instance.
+
+
+4. Why is the partial keyword useful?
+   The partial keyword allows for inmplementation of a class in multiple files. This allows huge classes to be split for readability
+
+
+5. What is a tuple?
+   A tuple is an concise group for multiple data elements that is immutable
+
+
+6. What does the C# record keyword do?
+   a new reference type other than structs or classes.
+
+
+7. What does overloading and overriding mean?
+   Overloading is when the same class has the same name for 2 methods that may take different number/order of/types of parameters.
+    Overrriding is when a child class has the same name for a method as its parent class.
+
+
+8. What is the difference between a field and a property?
+   Fields are private to a class, whereas properties are an available level of abstraction that can retrieve or modify fields
+
+
+9. How do you make a method parameter optional?
+   After the parameter is declared the = operator must be used to declare a default value for the parameter in case a value is not provided upon calling
+
+
+10. What is an interface and how is it different from abstract class?
+   Interface is a blueprint for a class. Unlike abstract classes, it cannot define any normal methods/variables or use them
+
+11. What accessibility level are members of an interface?
+   Internal: Only available within the same assembly
+
+12. True/False. Polymorphism allows derived classes to provide different implementations of the same method.
+   True
+  
+13. True/False. The override keyword is used to indicate that a method in a derived class is providing its own implementation of a method.
+   True
+
+14. True/False. The new keyword is used to indicate that a method in a derived class is providing its own implementation of a method.
+   False
+
+15. True/False. Abstract methods can be used in a normal (non-abstract) class. 
+   False
+  
+16. True/False. Normal (non-abstract) methods can be used in an abstract class.
+   True
+  
+17. True/False. Derived classes can override methods that were virtual in the base class.
+   True
+
+18. True/False. Derived classes can override methods that were abstract in the base class. 
+   True
+
+19. True/False. In a derived class, you can override a method that was neither virtual non abstract in the base class.
+   False
+
+20. True/False. A class that implements an interface does not have to provide an implementation for all of the members of the interface.
+   False
+
+21. True/False. A class that implements an interface is allowed to have other members that aren’t defined in the interface.
+   True
+
+22. True/False. A class can have more than one base class.
+   False
+
+23. True/False. A class can implement more than one interface.
+   True
